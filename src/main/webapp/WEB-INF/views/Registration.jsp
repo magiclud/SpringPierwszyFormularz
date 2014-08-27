@@ -10,22 +10,22 @@
 </head>
 <body>
     <div align="center">
-        <form:form action="register" method="post" commandName="userForm">
+        <form:form action="register" method="post" commandName="userForm" modelAttribute="spitter">
             <table border="0">
                 <tr>
                     <td colspan="2" align="center"><h2>Spring MVC Form Demo - Registration</h2></td>
                 </tr>
                 <tr>
                     <td>User Name:</td>
-                    <td><form:input path="username" /></td>
+                    <td><form:input path="username" /><small id="username_msg">Pole jest null lub zawiera spacje</small></td>
                 </tr>
                 <tr>
                     <td>Password:</td>
-                    <td><form:password path="password" /></td>
+                    <td><form:password path="password" /><small id="password_msg">Minimum 6 znakow</small></td>
                 </tr>
                 <tr>
                     <td>E-mail:</td>
-                    <td><form:input path="email" /></td>
+                    <td><form:input path="email" /><small id="email_msg">Podaj poprawny email</small></td>
                 </tr>
                 <tr>
                     <td>Birthday (mm/dd/yyyy):</td>

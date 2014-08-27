@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+Registration goes succesfully. 
+Please login now 
+<a href="${pageContext.servletContext.contextPath}/login">logowanie</a>
 </body>
 </html>
